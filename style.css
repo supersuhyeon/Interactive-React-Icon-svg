@@ -12,10 +12,6 @@ body{
     height: 1000px;
 }
 
-p{
-    color: white;
-}
-
 .react-mon{
     position: absolute;
     top: 0;
