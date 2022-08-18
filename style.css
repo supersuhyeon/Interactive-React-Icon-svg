@@ -21,6 +21,7 @@ body{
     width: 200px;
     height: 200px;
     margin: auto;
+    z-index: 99;
 }
 
 .cls-1{
