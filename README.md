@@ -19,24 +19,24 @@ HTML, CSS, JavaScript
 
 1. ICON : React icon FOLLOWS the cursor and blinks using a mask property and animations
 
-```3
-function render(){
-    dx = mousePosition.x - monPosition.x;
-    dy = mousePosition.y - monPosition.y;
+```js
+function render() {
+  dx = mousePosition.x - monPosition.x;
+  dy = mousePosition.y - monPosition.y;
 
-    monPosition.x = monPosition.x + dx * easeValue //easeValue = 0.05
-    monPosition.y = monPosition.y + dy * easeValue //easeValue = 0.05
+  monPosition.x = monPosition.x + dx * easeValue; //easeValue = 0.05
+  monPosition.y = monPosition.y + dy * easeValue; //easeValue = 0.05
 
-    monsterEl.style.transform = `translate(${monPosition.x}px, ${monPosition.y}px)`
-    requestAnimationFrame(render)
+  monsterEl.style.transform = `translate(${monPosition.x}px, ${monPosition.y}px)`;
+  requestAnimationFrame(render);
 }
-render()
+render();
 ```
 
 2. TITLE : By using an SVG animation with stroke properties, I could make the
    dynamic title that users can focus on
 
-```3
+```js
 @keyframes stroke{
     0%{
         fill: white;
